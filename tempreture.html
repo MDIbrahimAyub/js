@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Check The Tempreture </h1>
+    <input type="number" placeholder="Give Tempreture" id="input1">
+    <button onclick="Check()">Check</button>
+
+
+    <script>
+        function Check() {
+    let inp1 = document.querySelector("#input1").value;
+    inp1 = Number(inp1);
+    if (inp1 > 40) {
+        alert("It is too hot outside");
+    }
+    else if (inp1 > 30) {
+        alert("The weather today is normal");
+    }
+    else if (inp1 > 20) {
+        alert("Today's weather is cool");
+    }
+    else if (inp1 > 10) {
+        alert("OMG! Today's weather is so cool");
+    }
+    else {
+        alert("It's extremely cold today");
+    }
+}
+    </script>
+</body>
+
+</html>

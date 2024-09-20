@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Check Your Percentage</h1>
+        <div class="container">
+            <p>Matematics</p>
+            <input type="number" placeholder="Total Marks" id="total1">
+            <input type="number" placeholder="Obtained Marks" id="obtained1">
+            <p>Physics</p>
+            <input type="number" placeholder="Total Marks" id="total2">
+            <input type="number" placeholder="Obtained Marks" id="obtained2">
+            <p>Computer</p>
+            <input type="number" placeholder="Total Marks" id="total3">
+            <input type="number" placeholder="Obtained Marks" id="obtained3">
+        </div>
+        <button style="margin-top: 30px;" onclick="calculate()">Calculate</button>
+        <div class="result"></div>
+    </div>
+
+
+
+    <script>
+
+        function calculate() {
+            let t1 = document.querySelector("#total1").value;
+            let o1 = document.querySelector("#obtained1").value;
+            let t2 = document.querySelector("#total2").value;
+            let o2 = document.querySelector("#obtained2").value;
+            let t3 = document.querySelector("#total3").value;
+            let o3 = document.querySelector("#obtained3").value;
+            let result1 = document.querySelector(".result");
+            let totalMarks = Number(t1) + Number(t2) + Number(t3);
+            let obtainedMarks = Number(o1) + Number(o2) + Number(o3);
+            let percent = Number(obtainedMarks) / Number(totalMarks) * 100;
+            if (percent >= 80) {
+                result1.innerText = "Total Marks: " + totalMarks + "\n" +
+                    "Obtained Marks: " + obtainedMarks + "\n" +
+                    "Percentage: " + percent + "%" + "\n" +
+                    "Grade: A+" + "\n" +
+                    "Remarks: Excellent";
+            }
+            else if (percent >= 70 && percent < 80) {
+                result1.innerText = "Total Marks: " + totalMarks + "\n" +
+                    "Obtained Marks: " + obtainedMarks + "\n" +
+                    "Percentage: " + percent + "%" + "\n" +
+                    "Grade: A" + "\n" +
+                    "Remarks: Good";
+            }
+            else if (percent >= 60 && percent < 70) {
+                result1.innerText = "Total Marks: " + totalMarks + "\n" +
+                    "Obtained Marks: " + obtainedMarks + "\n" +
+                    "Percentage: " + percent + "%" + "\n" +
+                    "Grade: B" + "\n" +
+                    "Remarks: You Need To Improve";
+            }
+            else {
+                result1.innerText = "Total Marks: " + totalMarks + "\n" +
+                    "Obtained Marks: " + obtainedMarks + "\n" +
+                    "Percentage: " + percent + "%" + "\n" +
+                    "Grade: Fail" + "\n" +
+                    "Remarks: Sorry";
+            }
+        }
+    </script>
+</body>
+
+</html>

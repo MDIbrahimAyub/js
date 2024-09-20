@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Give Number To Check The Number Is Divisible By 3</h1>
+    <input type="number" placeholder="Give Number" id="input1">
+    <button onclick="check()">Check</button>
+
+
+
+    <script>
+        function check() {
+            let inp1 = document.querySelector("#input1").value;
+            inp1 = Number(inp1);
+            if (inp1 % 3 === 0) {
+                alert("The number is divisible by 3");
+            } else {
+                alert("The number is not divisible by 3");
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Check Traffic Color Rules</h1>
+    <input type="text" placeholder="Traffic Signal Color" id="input1">
+    <button onclick="get()">Submit</button>
+    <div class="result"></div>
+
+    <script>
+        function get(){
+            let inp1 = document.querySelector("#input1").value;
+            let result1 = document.querySelector(".result");
+            let red = "red";
+            let yellow = "yellow";
+            let green = "green";
+            if (inp1 == red) {
+                result1.innerHTML = "Must Stop";
+            }
+            else if (inp1 == yellow) {
+                result1.innerHTML = "Ready To Move Now";
+            }
+            else if (inp1 == green) {
+                result1.innerHTML = "Move Now";
+            }
+            else {
+                result1.innerHTML = "Invalid input";
+            }
+        }
+
+    </script>
+</body>
+
+</html>

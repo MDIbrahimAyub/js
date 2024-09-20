@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Welcome Cities</h1>
+    <input type="text" name="" placeholder="Name a City" id="input1">
+    <button onclick="ok()">Ok</button>
+
+
+
+
+    <script>function ok() {
+            let inp1 = document.querySelector("#input1").value;
+            let karachi = "karachi";
+            let Lahore = "lahore";
+            let Islamabad = "islamabad";
+            let Quetta = "quetta";
+            let Peshawar = "peshawar";
+            let Multan = "multan";
+    if(inp1 == karachi ){
+        alert("Welcom to city of light")
+    }
+    else if(inp1 == Lahore){
+        alert("Welcome to city of love")
+    }
+    else if(inp1 == Islamabad){
+        alert("Welcome to city of dreams")
+    }
+    else if(inp1 == Peshawar){
+        alert("Welcome to city of serenity")
+    }
+    else if(inp1 == Quetta){
+        alert("Welcome to city of peace")
+    }
+    else if(inp1 == Multan){
+        alert("Welcome to city of freedom")
+    }
+    else{
+        alert("City not found!")
+    }
+        }
+    </script>
+</body>
+
+</html>

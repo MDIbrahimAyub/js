@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            width: 100%;
+            height: calc(100vh - 120px);
+            color: #fff;
+            background-color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .header ul {
+            list-style: none;
+        }
+        .header ul li {
+            padding: 10px 1px;
+            text-align: center;
+        }
+        .header ul li a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .header ul li a::after{
+            content: '';
+            width: 0%;
+            height: 2px;
+            background-color: yellowgreen;
+            display: block;
+            margin: 1px;
+        }
+        .header ul li a:hover::after{
+            width: 100%;
+            transition: 0.5s ease-in-out;
+        }
+        h1{
+            background-color: #000;
+            text-align: center;
+            color: yellowgreen;
+            height: 100px;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> ALL JS ASSINGMENTS OF ALL CHAPTER NO 9 &10</h1>
+    <div class="header">
+        <ul>
+            <li><a href="city.html">City Program</a></li>
+            <li><a href="Divisible3.html">Divisible By 3 Program</a></li>
+            <li><a href="evenodd.html">Even Odd Program</a></li>
+            <li><a href="fuel.html">Car Fuel Program</a></li>
+            <li><a href="game.html">Guess Game Program</a></li>
+            <li><a href="gender.html">Gender Program</a></li>
+            <li><a href="math.html">Basic Calcuator Program</a></li>
+            <li><a href="percentage.html">Percentage Checker Program</a></li>
+            <li><a href="tempreture.html">Tempreture Program</a></li>
+            <li><a href="traffic.html">Traffic Rules Program</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

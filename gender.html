@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Check Your Gender</h1>
+    <input type="text" placeholder="Your Gender" id="input1">
+    <button onclick="get()">Submit</button>
+    <div class="result"></div>
+
+
+
+    <script>
+
+        function get() {
+            let inp1 = document.querySelector("#input1").value;
+            let result1 = document.querySelector(".result");
+            let male = "male";
+            let female = "female";
+           
+            if (inp1 == male) {
+                result1.innerText = "Good Morning Sir";
+            }
+            else if (inp1 == female) {
+                result1.innerText = "Good Morning Madam";
+            }
+            else {
+                result1.innerText = "Invalid input. Please enter male or female.";
+            }
+        }
+
+    </script>
+</body>
+
+</html>
